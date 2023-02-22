@@ -76,5 +76,3 @@ yarn build
   - `ci` 持续集成
   - `types` 类型定义文件更改
   - `wip` 开发中
-
-<div><img src="https://cdn.jsdelivr.net/gh/buqiyuan/MyImageHosting/imgs/vue3-antdv-admin/qq_group.jpg" height="280" /></div>
