@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+  import { onMounted } from 'vue';
+  // import chapter from './chapter';
   const obj = {
     name: '小明',
     age: '12',
@@ -15,8 +17,14 @@
       arr.push('04');
     }
   }
+  onMounted(() => {
+    // chapter('XXX专用章', 'XXX科技股份有限公司');
+  });
 </script>
 <template>
-  <div>dd</div>
+  <div>
+    <p>电子印章</p>
+    <canvas id="canvas" width="200" height="200"></canvas>
+  </div>
 </template>
 <style lang="less"></style>
