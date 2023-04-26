@@ -21,6 +21,42 @@ const routes: Array<RouteRecordRaw> = [
         component: () =>
           import(/* webpackChunkName: "dashboard-welcome" */ '@/views/her/index.vue'),
       },
+      {
+        path: '/wkdemo',
+        name: 'wkdemo',
+        meta: {
+          title: '页面间传值',
+          icon: 'icon-externa-link',
+        },
+        component: () =>
+          import(/* webpackChunkName: "dashboard-welcome" */ '@/views/wkdemo/index.vue'),
+      },
+      {
+        path: '/child1',
+        name: 'child1',
+        meta: {
+          title: 'B页面',
+          icon: 'icon-externa-link',
+          hideInMenu: true,
+          activeMenu: `wkdemo`,
+        },
+        component: () =>
+          import(/* webpackChunkName: "dashboard-welcome" */ '@/views/wkdemo/child1/child1.vue'),
+      },
+      {
+        path: '/grandson',
+        name: 'grandson',
+        meta: {
+          title: 'C页面',
+          icon: 'icon-externa-link',
+          hideInMenu: true,
+          activeMenu: `wkdemo`,
+        },
+        component: () =>
+          import(
+            /* webpackChunkName: "dashboard-welcome" */ '@/views/wkdemo/child1/grandson/grandson.vue'
+          ),
+      },
     ],
   },
 ];

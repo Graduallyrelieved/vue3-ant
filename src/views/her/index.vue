@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { onMounted } from 'vue';
-  // import chapter from './chapter';
+  import chapter from './chapter';
   const obj = {
     name: '小明',
     age: '12',
@@ -18,7 +18,7 @@
     }
   }
   onMounted(() => {
-    // chapter('XXX专用章', 'XXX科技股份有限公司');
+    chapter('XXX专用章', 'XXX科技股份有限公司');
   });
 </script>
 <template>
