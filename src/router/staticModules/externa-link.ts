@@ -57,6 +57,16 @@ const routes: Array<RouteRecordRaw> = [
             /* webpackChunkName: "dashboard-welcome" */ '@/views/wkdemo/child1/grandson/grandson.vue'
           ),
       },
+      {
+        path: '/wkdemoassembly',
+        name: 'wkdemoassembly',
+        meta: {
+          title: '组件间传值',
+          icon: 'icon-externa-link',
+        },
+        component: () =>
+          import(/* webpackChunkName: "dashboard-welcome" */ '@/views/wkdemoassembly/index.vue'),
+      },
     ],
   },
 ];

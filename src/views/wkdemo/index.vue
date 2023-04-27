@@ -21,7 +21,6 @@
     if (route.query.temp) {
       const temp = route.query.temp;
       inputValue.value = temp;
-      console.log(temp, 'temp');
     }
   });
 </script>
